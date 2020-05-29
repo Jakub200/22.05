@@ -1,0 +1,18 @@
+#include <iostream>
+#include <cstdlib>
+#include <ctime>
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+	void wypiszLiczbeLosowa( int max )
+ {srand( time( NULL ) );
+    std::cout << "Wylosowana liczba: " <<(( std::rand() % 50 ) + 7 ) << std::endl;}
+    
+    void wypiszLiczbeJSON( int liczba)
+ {cout << "liczba: 12" << endl; }
+ 
+ 
+int main(int argc, char** argv) 
+{
+   wypiszLiczbeLosowa(10);
+   wypiszLiczbeJSON(12);
+  return 0;
+}
